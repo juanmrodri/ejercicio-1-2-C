@@ -24,7 +24,6 @@ int main(void) {
 	int tercerNumero;
 	int cuartoNumero;
 	int quintoNumero;
-	int posicionNumero=1;
 
 	while(cantidadVueltas<5)
 	{
@@ -38,7 +37,6 @@ int main(void) {
 			numeroMinimo=numeroIngresado;
 			numeroMaximo=numeroIngresado;
 			primeroNumero=numeroIngresado;
-			posicionNumero=posicionNumero+1;
 		}
 		else
 		{
@@ -53,31 +51,31 @@ int main(void) {
 					numeroMaximo=numeroIngresado;
 				}
 			}
-			if(posicionNumero==2)
+			if(banderaPrimerNumero==1)
 			{
 				segundoNumero=numeroIngresado;
-				posicionNumero=posicionNumero+1;
+				banderaPrimerNumero=banderaPrimerNumero+1;
 			}
 			else
 			{
-				if(posicionNumero==3)
+				if(banderaPrimerNumero==2)
 					{
 						tercerNumero=numeroIngresado;
-						posicionNumero=posicionNumero+1;
+						banderaPrimerNumero=banderaPrimerNumero+1;
 					}
 				else
 					{
-						if(posicionNumero==4)
+						if(banderaPrimerNumero==3)
 							{
 								cuartoNumero=numeroIngresado;
-								posicionNumero=posicionNumero+1;
+								banderaPrimerNumero=banderaPrimerNumero+1;
 							}
 						else
 						{
-							if(posicionNumero==5)
+							if(banderaPrimerNumero==4)
 								{
 									quintoNumero=numeroIngresado;
-									posicionNumero=posicionNumero+1;
+									banderaPrimerNumero=banderaPrimerNumero+1;
 								}
 						}
 					}
